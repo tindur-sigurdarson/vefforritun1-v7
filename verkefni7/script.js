@@ -49,7 +49,6 @@ function start() {
 */
 function play() {
     const random = randomNumber(1, 100);
-    alert(random);
     const timeStart = new Date();
     let count = 0;
     while(true){

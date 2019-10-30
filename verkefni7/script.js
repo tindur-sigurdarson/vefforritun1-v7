@@ -63,6 +63,7 @@ function play() {
             const timeEnd = new Date();
             const time = (timeEnd - timeStart) / 1000;
             alert(`Rétt hjá þér meistari! Þú svaraðir rétt á ${time.toFixed(2)} sekúndum`);
+            games.push(count);
             return false;
         }else if(difference<5){
             alert(`Mjög nálægt meistari, reyndu aftur`);
@@ -79,7 +80,6 @@ function play() {
             return false;
         }
     }
-    games.push(count);
 }
 
 /**
